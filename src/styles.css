@@ -1,0 +1,135 @@
+/* Hero Section */
+#logo{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30.4px;
+    font-style: normal;
+    font-weight: 900;
+    margin-top: 32px;
+    margin-left: 32px;
+
+}
+
+#hero-section
+{
+    background-image: url("/src/images/hero-backgroung.png");
+
+
+    width: 100%;
+    object-fit: cover;
+}
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#hamburger-menu{
+    margin-top: 32px;
+    margin-right: 29px;
+}
+
+#white-block{
+    width: 90px;
+    height: 15px;
+    background: #FFF;
+    margin-left: 32px;
+    margin-top: 216px;
+}
+#heading{
+    margin: 32px 32px 0px 32px;
+    color: #FFF;
+    font-family: Libre Caslon Display;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#sub-heading{
+    margin: 32px 32px 0px 32px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 168.523%; /* 30.334px */
+}
+#button{
+    margin-top: 32px;
+    margin-left: 32px;
+    margin-bottom: 310px;
+    width: 153px;
+    height: 42px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background-color: transparent;
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* News Reads */
+#next-heading{
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 32px;
+    margin-top: 78px;
+}
+
+.card{
+
+    margin-left: 32px;
+    flex-shrink: 0;
+    width: 311px;
+    height: 619px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    margin-bottom: 32px;
+}
+
+.card > img{
+    border-radius: 4px;
+}
+
+.card .date{
+    color: #B7B7B7;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 35px;
+    margin-left: 32px;
+}
+
+.card .news{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 28px;
+    margin-left: 32px;
+    width: 247px;
+}
+
+.card .read-more{
+    color: #D9852C;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: right;
+    margin: 18px 32px 32px 183px;
+}
+
+#card-1{
+    margin-top: 78px;
+}
+
+
