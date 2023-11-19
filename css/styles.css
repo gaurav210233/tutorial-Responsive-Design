@@ -1,5 +1,19 @@
 /* Hero Section */
-#logo{
+#hero-section {
+    background-image: url("/images/hero-backgroung.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1024px;
+    background-position: center;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
     color: #FFF;
     font-family: Inter;
     font-size: 30.4px;
@@ -10,33 +24,20 @@
 
 }
 
-#hero-section
-{
-    background-image: url("/images/hero-backgroung.png");
-
-
-    width: 100%;
-    object-fit:fill;
-}
-
-#navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-#hamburger-menu{
+#hamburger-menu {
     margin-top: 32px;
     margin-right: 29px;
 }
 
-#white-block{
+#white-block {
     width: 90px;
     height: 15px;
     background: #FFF;
     margin-left: 32px;
     margin-top: 216px;
 }
-#heading{
+
+#heading {
     margin: 32px 32px 0px 32px;
     color: #FFF;
     font-family: Libre Caslon Display;
@@ -44,15 +45,17 @@
     font-weight: 500;
 }
 
-#sub-heading{
+#sub-heading {
     margin: 32px 32px 0px 32px;
     color: #FFF;
     font-family: Inter;
     font-size: 18px;
     font-weight: 500;
-    line-height: 168.523%; /* 30.334px */
+    line-height: 168.523%;
+    /* 30.334px */
 }
-#button{
+
+#button {
     margin-top: 32px;
     margin-left: 32px;
     margin-bottom: 310px;
@@ -71,21 +74,31 @@
     line-height: normal;
 }
 
+
 /* News Reads */
-#next-heading{
+#next-heading {
     color: #000;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-left: 32px;
     margin-top: 78px;
+    text-align: center;
 }
 
-.card{
 
-    margin-left: 32px;
+
+/* Cards Section */
+#cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+
+    /* margin-left: 32px; */
     flex-shrink: 0;
     width: 311px;
     height: 619px;
@@ -94,11 +107,11 @@
     margin-bottom: 32px;
 }
 
-.card > img{
+.card>img {
     border-radius: 4px;
 }
 
-.card .date{
+.card .date {
     color: #B7B7B7;
     font-family: Inter;
     font-size: 13px;
@@ -107,7 +120,7 @@
     margin-left: 32px;
 }
 
-.card .news{
+.card .news {
     color: #000;
     font-family: Inter;
     font-size: 20px;
@@ -117,7 +130,7 @@
     width: 247px;
 }
 
-.card .read-more{
+.card .read-more {
     color: #D9852C;
     font-family: Inter;
     font-size: 15px;
@@ -128,8 +141,78 @@
     margin: 18px 32px 32px 183px;
 }
 
-#card-1{
+#card-1 {
     margin-top: 78px;
 }
 
+/* Medium devices (tablets/laptops) */
+@media screen and (min-width: 768px) {
 
+    #cards-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 187px;
+
+    }
+
+    .card>img {
+        height: 310px;
+        width: 187px;
+    }
+
+    .card .news {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 28px;
+        margin-left: 32px;
+        width: 123px;
+        height: auto;
+    }
+
+    .card .read-more {
+        align-self: flex-end;
+        margin: 46px 32px 32px 58px;
+    }
+
+    #card-1 {
+        margin-top: 0px;
+    }
+
+}
+
+/* Large devices (laptops/desktops) */
+@media screen and (min-width: 992px) {
+
+    #cards-section {
+        margin-bottom: 30px;
+    }
+
+    .card {
+        width: 419px;
+        height: auto;
+    }
+
+    .card>img {
+        height: 352px;
+        width: 419px;
+        object-fit: cover;
+    }
+
+    .card .news {
+        font-size: 25px;
+        font-weight: 700;
+        margin-top: 28px;
+        margin-left: 32px;
+        width: 355px;
+    }
+
+    .card .read-more {
+        align-self: flex-end;
+    }
+}
