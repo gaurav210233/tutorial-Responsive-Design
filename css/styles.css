@@ -85,6 +85,7 @@
     line-height: normal;
     margin-top: 78px;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 
@@ -94,6 +95,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -141,9 +143,6 @@
     margin: 18px 32px 32px 183px;
 }
 
-#card-1 {
-    margin-top: 78px;
-}
 
 /* Medium devices (tablets/laptops) */
 @media screen and (min-width: 768px) {
@@ -157,13 +156,13 @@
     .card {
         display: flex;
         flex-direction: column;
-        width: 187px;
+        width: 200px;
 
     }
 
     .card>img {
         height: 310px;
-        width: 187px;
+        width: 200px;
     }
 
     .card .news {
@@ -171,7 +170,42 @@
         font-weight: 700;
         margin-top: 28px;
         margin-left: 32px;
-        width: 123px;
+        width: 140px;
+        height: auto;
+    }
+
+    .card .read-more {
+        align-self: flex-end;
+        margin: auto 32px 32px 58px;
+    }
+
+    #card-1 {
+        margin-top: 0px;
+    }
+
+}
+
+@media screen and (min-width: 992px)  and (max-width: 1440px){
+    
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+
+    }
+
+    .card>img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .card .news {
+        font-size: 15px;
+        font-weight: 700;
+        margin-top: 28px;
+        margin-left: 32px;
+        width: 220px;
         height: auto;
     }
 
@@ -182,12 +216,11 @@
 
     #card-1 {
         margin-top: 0px;
-    }
-
+    }   
 }
 
 /* Large devices (laptops/desktops) */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1440px) {
 
     #cards-section {
         margin-bottom: 30px;
@@ -199,7 +232,7 @@
     }
 
     .card>img {
-        height: 352px;
+        height: 500px;
         width: 419px;
         object-fit: cover;
     }
